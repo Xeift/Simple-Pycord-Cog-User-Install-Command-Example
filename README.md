@@ -35,7 +35,7 @@ Click `Authorize`.
 After you authorized the bot, you will see a nice little pop up at bottom right corner tells you `App Added!`
 ![img](https://github.com/user-attachments/assets/41acd646-a395-4c5b-85f2-b29f5eaa6e29)
 
-We can now open App Launcher and check our bot. Of course, you won't any commands because you haven't run the code. You can see the `/ping` command in the image because I ran the code earlier.
+We can now open App Launcher and check our bot. Of course, you won't see any commands because you haven't run the code. You can see the `/ping` command in the image because I ran the code earlier.
 ![img](https://github.com/user-attachments/assets/8e1dc29a-3fff-4991-a9e5-6ddef5d729c1)
 
 4. Here comes the coding part. I assume you are familiar with these steps too, so I'll keep it simple.
