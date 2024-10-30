@@ -54,7 +54,7 @@ FAQ
 > 1. Copy `ping.py` in `cogs` folder and rename it to the name you like.
 > 2. Rename every 'ping' in `ping.py` to the name you like.
 > 3. Open `main.py`, you can see:
-```
+```python
     extensions = [
         'cogs.ping',
 
@@ -63,4 +63,24 @@ FAQ
 now add `'cogs.another_command_name',` under `'cogs.ping',`
 > 4. Restart main.py
 
-**What's the difference between user**
+**What's the difference between user install command and regular guild install command in code?**
+`ping.py`
+```python
+class ping(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+
+    @commands.slash_command(
+        name='ping',
+        description='Check bot latency',
+        integration_types=[
+            IntegrationType.user_install, # This line shows that the command is a user install command
+            IntegrationType.guild_install,
+        ],
+        contexts=[
+            InteractionContextType.guild,
+            InteractionContextType.bot_dm, # This line shows that the command can be used in DM
+            InteractionContextType.private_channel, # This line shows that the command can be used in private channel
+        ],
+    )
+```
