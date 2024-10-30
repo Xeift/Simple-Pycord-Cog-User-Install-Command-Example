@@ -50,10 +50,10 @@ We can now open App Launcher and check our bot. Of course, you won't any command
 
 FAQ
 -----------------
-**I want to create another command, how do I do this?**
-> 1. Copy `ping.py` in `cogs` folder and rename it to the name you like.
-> 2. Rename every 'ping' in `ping.py` to the name you like.
-> 3. Open `main.py`, you can see:
+## I want to create another command, how do I do this?
+1. Copy `ping.py` in `cogs` folder and rename it to the name you like.
+2. 2. Rename every 'ping' in `ping.py` to the name you like.
+3. Open `main.py`, you can see:
 ```python
     extensions = [
         'cogs.ping',
@@ -61,9 +61,10 @@ FAQ
     ]
 ```
 now add `'cogs.another_command_name',` under `'cogs.ping',`
-> 4. Restart main.py
+4. Restart main.py
 
-**What's the difference between user install command and regular guild install command in code?**
+## What's the difference between user install command and regular guild install command in code?
+
 `ping.py`
 ```python
 class ping(commands.Cog):
